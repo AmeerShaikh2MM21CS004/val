@@ -1,0 +1,151 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d9a6a6;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 500px;
+    margin: 20px;
+  }
+  
+  .container .tenor-gif-embed {
+    max-width: 200px;
+  }
+  
+  .container .btn {
+    display: flex;
+    gap: 25px;
+  }
+  
+  .btn a {
+    text-decoration: none;
+    color: #111;
+    background: #fff;
+    padding: 10px 25px;
+    border-radius: 66px;
+    box-shadow: 0.5rem 1rem 3rem hsl(0, 0%, 0%, 0.3);
+  }
+
+.love,.yes,.no{padding-top: 15%;
+		
+}
+.love span{color:red;}
+h2{font-size: 72px;margin-bottom: 20px;}
+a{font-size: 24px;text-decoration: none;padding: 5px 10px;
+margin-top: 20px;border:3px solid #ddd; border-radius: 10px;}
+#no{color:red; background: #eee;margin-right: 50px;}
+#yes{color:green;background: #eee;}
+
+.yes img{
+height: 30px;
+width: 30px;
+animation: image 4s linear infinite;
+}
+@keyframes image{
+0%{transform: scale(.5);}
+50%{transform: scale(1.5);}
+100%{transform: scale(.5);}
+}
+
+/* button {
+  background-color: #800020;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px; 
+  transition: 0.3s;
+} */ 
+
+/* footer button:hover {
+  background-color: #a52a2a;
+}
+p span {
+  font-size: clamp(20px, 2vw, 30px);
+  font-weight: 600;
+  text-shadow: 0 0 20px rgb(255, 255, 255);
+  color: #800020;
+}
+a{
+  text-decoration: none;
+}
+/* button {
+  border-color: #466baf;
+  padding: 10px;
+  text-transform: uppercase;
+  font-family: 'Signika', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  background-color: #800020;
+
+} */
+
+.romantic-btn {
+  background: linear-gradient(45deg, #ff477e, #ff6b8b, #ff98a3);
+  border: none;
+  padding: 12px 25px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(255, 105, 135, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Add a glowing effect */
+.romantic-btn::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 10%, transparent 70%);
+  transform: scale(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.romantic-btn:hover::before {
+  transform: scale(1);
+}
+
+/* Hover animation */
+.romantic-btn:hover {
+  box-shadow: 0 0 20px rgba(255, 105, 135, 0.8);
+  transform: scale(1.05);
+}
+
+/* Styling the link inside the button */
+.romantic-btn a {
+  color: white;
+  text-decoration: none;
+  display: inline-block; /* Prevents extra block spacing */
+  padding: 12px 25px; /* Ensures link fits inside */
+  border-radius: 50px;
+  width: 100%; /* Ensures it doesn't overflow */
+  height: 100%;
+}
+
